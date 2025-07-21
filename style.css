@@ -416,6 +416,8 @@ nav button {
   max-width: 1400px;
   margin: 0 auto;
   color: #ffffff;                
+  position: relative;
+  left: -25px;
 }
 
 .second-title {
