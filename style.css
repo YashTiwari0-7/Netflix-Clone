@@ -836,36 +836,3 @@ nav button {
 
 
 
-/* Responsive Design */
-  /* @media (min-width: 1280px) {
-    .curved-line-container{
-        width: 130%;
-        left: -15%;
-    }
-}
- */
-
- /* Responsive Design */
-/* @media (max-width: 768px) {
-    .header-controls {
-        gap: 12px;
-    }
-    
-    .language-dropdown {
-        padding: 6px 28px 6px 10px;
-        font-size: 13px;
-        min-width: 100px;
-    }
-    
-    .signin-btn {
-        padding: 6px 14px;
-        font-size: 13px;
-        min-width: 70px;
-    }
-    
-    .dropdown-arrow {
-        width: 14px;
-        height: 14px;
-        right: 6px;
-    }
-} */
