@@ -299,10 +299,10 @@ nav button {
     width: 100%;
     height: 100px;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
     position: relative;
+    top: -20px;
     height: 6.25rem;
-    z-index: 1;
+    z-index: -1;
 }
 
 /* Curved line child div */
@@ -353,8 +353,11 @@ nav button {
 }
 
 .title {
-    font-size: 28px;
-    font-weight: bold;
+    position: relative;
+    left: -35px;
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-top: 15px;
     margin-bottom: 30px;
     color: #ffffff;
     letter-spacing: 0.5px;
@@ -366,7 +369,8 @@ nav button {
     align-items: flex-start;
     /* gap: 20px; */
     position: relative;
-    width: 1280px;
+    left: -45px;
+    width: 1400px;
 
     
 
@@ -489,7 +493,27 @@ nav button {
     background-color: #333333;
 }
 
+.content-box-partial:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #333333;
+}
+
 .content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-box-partial::before {
     content: '';
     position: absolute;
     top: 0;
@@ -506,6 +530,10 @@ nav button {
     opacity: 1;
 }
 
+.content-box-partial:hover::before {
+    opacity: 1;
+}
+
 .box-wrapper:hover .number {
     color: #fff;
     text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
@@ -513,7 +541,14 @@ nav button {
     transition: all 0.3s ease;
 }
 
-.nav-arrow {
+.box-wrapper6:hover .number6 {
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* .nav-arrow {
     position: absolute;
     right: 85px;
     top: 50%;
@@ -528,7 +563,7 @@ nav button {
     cursor: pointer;
     transition: all 0.3s ease;
     /* border: 1px solid rgba(255, 255, 255, 0.2); */
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px);
 }
 
 .nav-arrow:hover {
@@ -541,7 +576,7 @@ nav button {
     font-size: 28px;
     color: #ffffff;
     font-weight: bold;
-}
+} */ 
 
 .box-wrapper {
     transition: all 0.3s ease;
@@ -551,6 +586,13 @@ nav button {
     z-index: 5;
 }
 
+.box-wrapper6 {
+    transition: all 0.3s ease;
+}
+
+.box-wrapper6:hover {
+    z-index: 5;
+}
 
 .container2 {
   max-width: 1400px;
@@ -611,23 +653,27 @@ nav button {
 }
 
 .container3 {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1220px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -23px;
+  align-items: flex-start;
+  
+  margin: 0;
 }
 
 .third-main-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ffffff;
-  font-weight: 650;
-  margin-top: 40px;
-  margin-bottom: 15x;
+  font-weight: 450;
+  margin-top: 65px;
   text-align: left;
+  margin-bottom: 15px;
 }
 
 .faq-container {
   display: flex;
-  position: relative;
-  left: -23px;
   height: 552px;
   width: 100%;
   flex-direction: column;
@@ -835,6 +881,3 @@ nav button {
 .learn-more-link:hover {
     text-decoration: underline;
 }
-
-
-
